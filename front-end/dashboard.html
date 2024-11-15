@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <div id="user-profile">
+            <img src="image.png" alt="User Profile" id="profile-icon">
+            <span id="username"></span>
+        </div>
+
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search by Car Name or ID">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Your Cars</h2>
+        <div id="car-list">
+        </div>
+
+        <button id="create-car-btn" onclick="window.location.href='create-car.html'">Create New Car</button>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

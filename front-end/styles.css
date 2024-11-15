@@ -1,0 +1,195 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input[type="file"] {
+    padding: 0;
+  }
+  
+  form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  #login-section, #signup-section, #product-list-section, #create-product-section {
+    display: none;
+  }
+  
+  #login-section[style="display:block;"], 
+  #signup-section[style="display:block;"], 
+  #product-list-section[style="display:block;"], 
+  #create-product-section[style="display:block;"] {
+    display: block;
+  }
+  
+  #login-section h2, #signup-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #signup-section p, #login-section p {
+    text-align: center;
+  }
+  
+  #signup-link, #login-link {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  #signup-link:hover, #login-link:hover {
+    text-decoration: underline;
+  }
+  
+  #product-list-section {
+    text-align: center;
+  }
+  
+  #product-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #product-list li {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  #product-list li:hover {
+    background-color: #e9e9e9;
+  }
+  
+  #create-product-section {
+    margin-top: 20px;
+  }
+  
+  #create-product-section h2 {
+    text-align: center;
+  }
+  
+  #create-product-section form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #create-product-section input[type="file"] {
+    padding: 5px;
+  }
+  
+  #create-product-section input[type="file"]:not([multiple]) {
+    margin-bottom: 15px;
+  }
+  
+  #create-product-section textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  #search {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #search:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    #product-list li {
+      font-size: 14px;
+    }
+  }
+  
